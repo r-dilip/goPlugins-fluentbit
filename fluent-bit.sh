@@ -2,7 +2,7 @@
 wget -qO - https://packages.fluentbit.io/fluentbit.key | sudo apt-key add -
 sudo echo "deb https://packages.fluentbit.io/ubuntu/xenial xenial main" >> /etc/apt/sources.list  
 sudo apt-get update
-sudo apt-get install td-agent-bit sqlite3 libsqlite3-dev
+sudo apt-get install td-agent-bit sqlite3 libsqlite3-dev -y
 
 #start fluent-bit
 /opt/td-agent-bit/bin/td-agent-bit -c /etc/td-agent-bit/td-agent-bit.conf
